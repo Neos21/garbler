@@ -1,0 +1,15 @@
+@import '../node_modules/@neos21/neos-normalize/neos-normalize.scss';
+
+body {
+  margin: 1rem;
+  color: #111;
+  background: #fcfcfc;
+}
+
+a {
+  color: #07f;
+  
+  &:hover {
+    color: #f07;
+  }
+}

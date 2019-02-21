@@ -1,0 +1,51 @@
+<h1>Garbler</h1>
+
+<form id="form-input">
+  <p>
+    <textarea [(ngModel)]="input" name="input" id="input" placeholder="文字列を入力してください。"></textarea>
+  </p>
+  <p id="row-submit">
+    <button type="submit" (click)="onSubmit()" [disabled]="input === ''" id="submit">Submit</button>
+  </p>
+</form>
+
+<table id="results" [hidden]="!results || !results.length">
+  <thead>
+    <tr>
+      <th id="results-header-encoding">Encoding</th>
+      <th id="results-header-decoding">Decoding</th>
+      <th id="results-header-result">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let result of results">
+      <td class="results-body results-body-encoding">{{ result.encoding }}</td>
+      <td class="results-body results-body-decoding">{{ result.decoding }}</td>
+      <td class="results-body results-body-result">{{ result.result }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>これは何？</h2>
+<ul>
+  <li>文字化けした文字列の復元を色々な組み合わせで試みます。「Encoding」の文字コードでエンコードし、「Decoding」の文字コードでデコードした文字列を「Result」に表示しています。</li>
+  <li>正常な文字列を与えて、「この文字列が文字化けするとどのように見えるのか」を調べる際にも使えます。</li>
+  <li>「<a href="http://lab.kiki-verb.com/mojibakeratta/" target="_blank">もじばけらった</a>」インスパイア。<a href="https://www.npmjs.com/package/iconv-lite" target="_blank">iconv-lite</a> と <a href="https://www.npmjs.com/package/buffer" target="_blank">buffer</a> パッケージを利用してフロントエンド・オンリーで動作しています。</li>
+  <li>
+    作者 : <a href="http://neo.s21.xrea.com/" target="_blank">Neo</a> (<a href="https://twitter.com/Neos21" target="_blank">@Neos21</a>)
+    <ul id="links">
+      <li><a href="http://neo.s21.xrea.com/" target="_blank">Neo's World</a></li>
+      <li><a href="http://neos21.hatenablog.com/" target="_blank">Corredor</a></li>
+      <li><a href="http://neos21.hatenablog.jp/" target="_blank">Murga</a></li>
+      <li><a href="http://neos21.hateblo.jp/" target="_blank">El Mylar</a></li>
+      <li><a href="http://bit-archer.hatenablog.com/" target="_blank">Bit-Archer</a></li>
+      <li><a href="https://twitter.com/Neos21" target="_blank">Twitter - @Neos21</a></li>
+      <li><a href="https://github.com/Neos21" target="_blank">GitHub - Neos21</a></li>
+      <li><a href="https://github.com/Neos21/garbler" target="_blank">GitHub - Neos21 - garbler</a></li>
+      <li><a href="https://neos21.github.io/" target="_blank">Neo's GitHub Pages</a></li>
+      <li><a href="https://neos21.github.io/garbler" target="_blank">Neo's GitHub Pages - Garbler</a></li>
+    </ul>
+  </li>
+</ul>

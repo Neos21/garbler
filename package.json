@@ -1,0 +1,54 @@
+{
+  "name": "garbler",
+  "private": true,
+  "scripts": {
+    "?ng": "echo 'Angular CLI.'",
+    "ng": "ng",
+    "?start": "echo 'Start live-reload.'",
+    "start": "ng serve --open",
+    "?lint": "echo 'Lint TypeScript files.'",
+    "lint": "ng lint",
+    "?build": "echo 'Production build.'",
+    "build": "ng build --prod",
+    "?deploy": "echo 'Publish with GitHub Pages. `npm run build` must run before this script.'",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@angular/animations": "7.2.6",
+    "@angular/common": "7.2.6",
+    "@angular/compiler": "7.2.6",
+    "@angular/core": "7.2.6",
+    "@angular/forms": "7.2.6",
+    "@angular/platform-browser": "7.2.6",
+    "@angular/platform-browser-dynamic": "7.2.6",
+    "@angular/router": "7.2.6",
+    "@neos21/neos-normalize": "1.0.11",
+    "buffer": "5.2.1",
+    "core-js": "2.6.5",
+    "iconv-lite": "0.4.24",
+    "rxjs": "6.3.3",
+    "tslib": "1.9.3",
+    "zone.js": "0.8.29"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "0.13.2",
+    "@angular/cli": "7.3.2",
+    "@angular/compiler-cli": "7.2.6",
+    "@angular/language-service": "7.2.6",
+    "@types/node": "8.9.5",
+    "codelyzer": "4.5.0",
+    "gh-pages": "2.0.1",
+    "ts-node": "7.0.1",
+    "tslint": "5.11.0",
+    "typescript": "3.2.4"
+  },
+  "author": "Neos21 <neos21@gmail.com> (http://neo.s21.xrea.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neos21/garbler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Neos21/garbler/issues"
+  },
+  "homepage": "https://Neos21.github.io/garbler/"
+}

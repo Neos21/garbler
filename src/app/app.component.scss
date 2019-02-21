@@ -1,0 +1,56 @@
+@mixin form-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: .5rem;
+  background: #fff;
+}
+
+#input {
+  @include form-control;
+  width: 100%;
+  height: 10rem;
+  min-height: 4em;
+  resize: vertical;
+}
+
+#row-submit {
+  text-align: center;
+}
+
+#submit {
+  @include form-control;
+  width: 70%;
+  cursor: pointer;
+  
+  &:hover {
+    background: #f9f9f9;
+  }
+  
+  &[disabled] {
+    background: #f9f9f9;
+    cursor: not-allowed;
+  }
+}
+
+#results {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+#results-header-encoding,
+#results-header-decoding {
+  width: 15rem;
+}
+
+.results-body {
+  vertical-align: top;
+}
+
+.results-body-result {
+  white-space: pre-wrap;
+}
+
+#links {
+  font-size: .75rem;
+}
