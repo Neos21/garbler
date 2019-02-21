@@ -7,7 +7,7 @@
     "?start": "echo 'Start live-reload.'",
     "start": "ng serve --open",
     "?lint": "echo 'Lint TypeScript files.'",
-    "lint": "ng lint",
+    "lint": "ng lint --type-check",
     "?build": "echo 'Production build.'",
     "build": "ng build --base-href ./ --prod",
     "?deploy": "echo 'Publish with GitHub Pages. `npm run build` must run before this script.'",
