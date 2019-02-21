@@ -9,7 +9,7 @@
     "?lint": "echo 'Lint TypeScript files.'",
     "lint": "ng lint",
     "?build": "echo 'Production build.'",
-    "build": "ng build --prod",
+    "build": "ng build --base-href ./ --prod",
     "?deploy": "echo 'Publish with GitHub Pages. `npm run build` must run before this script.'",
     "deploy": "gh-pages -d dist"
   },
