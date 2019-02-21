@@ -2,10 +2,10 @@
 
 <form id="form-input">
   <p>
-    <textarea [(ngModel)]="input" name="input" id="input" placeholder="文字列を入力してください。"></textarea>
+    <textarea [(ngModel)]="input" name="input" id="input" placeholder="文字列を入力して「変換！」ボタンを押してください。"></textarea>
   </p>
   <p id="row-submit">
-    <button type="submit" (click)="onSubmit()" [disabled]="input === ''" id="submit">Submit</button>
+    <button type="submit" (click)="onSubmit()" [disabled]="input === ''" id="submit">変換！</button>
   </p>
 </form>
 
