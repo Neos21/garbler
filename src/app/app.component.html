@@ -9,22 +9,24 @@
   </p>
 </form>
 
-<table id="results" [hidden]="!results || !results.length">
-  <thead>
-    <tr>
-      <th id="results-header-encoding">Encoding</th>
-      <th id="results-header-decoding">Decoding</th>
-      <th id="results-header-result">Result</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let result of results">
-      <td class="results-body results-body-encoding">{{ result.encoding }}</td>
-      <td class="results-body results-body-decoding">{{ result.decoding }}</td>
-      <td class="results-body results-body-result">{{ result.result }}</td>
-    </tr>
-  </tbody>
-</table>
+<div id="results-wrapper" *ngIf="results && results.length">
+  <table id="results">
+    <thead>
+      <tr>
+        <th id="results-header-encoding">Encoding</th>
+        <th id="results-header-decoding">Decoding</th>
+        <th id="results-header-result">Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let result of results">
+        <td class="results-body results-body-encoding">{{ result.encoding }}</td>
+        <td class="results-body results-body-decoding">{{ result.decoding }}</td>
+        <td class="results-body results-body-result">{{ result.result }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <hr>
 
@@ -40,7 +42,6 @@
       <li><a href="http://neos21.hatenablog.com/" target="_blank">Corredor</a></li>
       <li><a href="http://neos21.hatenablog.jp/" target="_blank">Murga</a></li>
       <li><a href="http://neos21.hateblo.jp/" target="_blank">El Mylar</a></li>
-      <li><a href="http://bit-archer.hatenablog.com/" target="_blank">Bit-Archer</a></li>
       <li><a href="https://twitter.com/Neos21" target="_blank">Twitter - @Neos21</a></li>
       <li><a href="https://github.com/Neos21" target="_blank">GitHub - Neos21</a></li>
       <li><a href="https://github.com/Neos21/garbler" target="_blank">GitHub - Neos21 - garbler</a></li>

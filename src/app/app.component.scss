@@ -32,6 +32,10 @@
   }
 }
 
+#results-wrapper {
+  overflow-x: auto;
+}
+
 #results {
   width: 100%;
   border: 1px solid #ccc;
@@ -40,11 +44,19 @@
 
 #results-header-encoding,
 #results-header-decoding {
-  width: 15rem;
+  width: 10rem;
+  min-width: 10rem;
+}
+
+#results-header-encoding,
+#results-header-decoding,
+#results-header-result {
+  text-align: left;
 }
 
 .results-body {
   vertical-align: top;
+  white-space: nowrap;
 }
 
 .results-body-result {
