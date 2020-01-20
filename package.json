@@ -1,5 +1,6 @@
 {
   "name": "garbler",
+  "description": "Garbler",
   "private": true,
   "scripts": {
     "?ng": "echo 'Angular CLI.'",
@@ -13,6 +14,20 @@
     "?deploy": "echo 'Publish with GitHub Pages. `npm run build` must run before this script.'",
     "deploy": "gh-pages -d dist"
   },
+  "author": "Neos21 <neos21@gmail.com> (http://neo.s21.xrea.com/)",
+  "license": "MIT",
+  "homepage": "https://Neos21.github.io/garbler/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neos21/garbler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Neos21/garbler/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Neos21"
+  },
   "dependencies": {
     "@angular/animations": "7.2.6",
     "@angular/common": "7.2.6",
@@ -22,7 +37,7 @@
     "@angular/platform-browser": "7.2.6",
     "@angular/platform-browser-dynamic": "7.2.6",
     "@angular/router": "7.2.6",
-    "@neos21/neos-normalize": "1.0.11",
+    "@neos21/neos-normalize": "1.0.15",
     "buffer": "5.2.1",
     "core-js": "2.6.5",
     "iconv-lite": "0.4.24",
@@ -41,14 +56,5 @@
     "ts-node": "7.0.1",
     "tslint": "5.11.0",
     "typescript": "3.2.4"
-  },
-  "author": "Neos21 <neos21@gmail.com> (http://neo.s21.xrea.com/)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Neos21/garbler.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Neos21/garbler/issues"
-  },
-  "homepage": "https://Neos21.github.io/garbler/"
+  }
 }
